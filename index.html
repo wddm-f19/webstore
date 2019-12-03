@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Document title]</title>
+    <title>Web Store</title>
     <meta name="description" content="[A short description]">
     <meta name="author" content="[Your Name]">
     <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
@@ -15,45 +15,37 @@
 
     <header>
       <!-- Site logo, replace with your own -->
-      <a href="index.html"><img src="img/logo.svg" alt="HTML Logo (replace this)"></a>
-
-      <button type="button">
-        <span class="material-icons">menu</span>
-      </button>
+      
 
       <!-- Navigation menu and toggle button (example) -->
-      <nav aria-label="Primary">
-        <ul>
-          <li><a href="#">Webpage</a>
-            <ul>
-              <li><a href="#">Subpage</a></li>
-              <li><a href="#">Subpage</a></li>
-              <li><a href="#">Subpage</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Webpage</a></li>
-          <li><a href="#">Webpage</a></li>
-          <li><a href="#">Webpage</a></li>
-        </ul>
-      </nav>
+      <div class="header">
+      <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo"></a>
+        <div class="header-right">
+          <a class="active" href="#home">Store</a>
+          <a class="#home" href="#home">Home</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+      </div>
+    
 
       <!-- Search the site -->
-      <form>
-        <label>Search
-          <input type="search" name="find" id="find">
+      <form class="searchform">  
+        <label>
+          <input type="search" placeholder="search" name="find" id="find">
         </label>
-        <button type="button"><span class="material-icons">search</span></button>
+        <button class="searchbtn" type="button"><span class="material-icons">search</span></button>
       </form>
 
       <!-- Additional functionality or links -->
       <ul>
-        <li><button><span class="material-icons">favorite_border</span></button></li>
+        <!-- <li><button><span class="material-icons">favorite_border</span></button></li> -->
         <li><button><span class="material-icons">shopping_cart</span></button></li>
       </ul>
     </header>
 
     <main>
-      <header>
+      <header1>
         <h1>Sale on [Category Name]</h1>
 
         <!-- Filtering product form -->
@@ -117,7 +109,7 @@
             </ol>
           </fieldset>
         </form>
-      </header>
+      </header1>
 
       <section>
         <h2>Search Results</h2>
