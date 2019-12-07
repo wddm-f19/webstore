@@ -1,60 +1,45 @@
 const products = [
   {
-    name: 'Whatever',
+    name: 'Product 1',
     price: 123.44,
     img: 'img/product.jpg'
   },{
-    name: 'Somethjing',
+    name: 'Product 2',
     price: 132.12,
-    img: 'img/logo.svg'
+    img: 'img/product.jpg'
   },{
-    name: 'Different name',
+    name: 'Product 3',
+    price: 111.11,
+    img: 'img/product.jpg'
+  },{
+    name: 'Product 4',
     price: 111.11,
     img: 'img/product.jpg'
   }
 ];
 
 
+
 const getProductAsHtml = (prod) => {
 
-  // Replace article with a complete product
+  // Replace article with a complete product 
   return `
   <article class="product">
-    <header>
+    <header class="image">
       <img src="${prod.img}" alt="Product Image">
     </header>
-    <h3>${prod.name}</h3>
-    <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+    <h3>${prod.name}</h3> <hr width="80%">
+    <p class="info">A nice picture of the product.</p>
+
     <form>
-      <fieldset>
-        <legend>Colours</legend>
-        <ul>
-          <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-          <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-          <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
-        </ul>
-      </fieldset>
+    <fieldset>
+      <data class="price" value="${prod.price}">${prod.price}</data>
+      <button class="cartbtn" type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+      <button class="favbtn" type="button"><span class="material-icons">favorite</span></button>
+    </footer>
+  </form> 
+   
 
-      <fieldset>
-        <legend>Sizes</legend>
-        <ol>
-          <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
-          <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
-          <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
-        </ol>
-      </fieldset>
-
-      <footer>
-        <dl>
-          <dt>Rating</dt>
-          <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-        </dl>
-        <data value="${prod.price}">${prod.price}</data>
-        <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-        <button type="button"><span class="material-icons">favorite</span></button>
-        <a href="#">see more</a>
-      </footer>
-    </form>
   </article>`;
 }
 

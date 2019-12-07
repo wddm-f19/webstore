@@ -62,26 +62,210 @@
 
 .products {
   padding: 1em;
+  text-align: center;
 }
+
 .product {
-  border: 1px solid black;
+  border: 5px solid black;
   margin: 1em 0;
   padding: 1em;
+  border-radius: 5px;
+  width: 35%;
+  height: 40%;
+  display: inline-block;
+}
+
+.image {
+  transition: transform .2s;
+  border-radius: 10px;
+  /* width: 75%; */
+}
+
+.image:hover {
+  transition: transform .3s;
+  transform: scale(1.5); 
+  border-radius: 10px;
+}
+
+.price {
+  display: block;
+  width: 95px;
+  text-align: center;
+  color: blue;
+  background-color: lightgray;
+  border-radius: 4px;
+  font-size: 30px;
+  
+}
+
+.cartbtn {
+  margin-top: 10px;
+}
+
+.favbtn {
+  margin-top: 10px;
+}
+
+h3 {
+  color: red;
+  background-color: #333;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  }
+
+.info {
+ color: darkred;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ font-size: 20px;
+}  
+
+
+.center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.productsfound {
+  margin: auto;
+  width: 7%;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  border-length: 10px;
+  margin-bottom: 15px;
+}
+
+.productsfound:hover {
+  background-color: gray;
+}
+
+.cartone {
+  text-align: right;
+  margin: 10px;
+}
+
+.searchform {
+  float: left;
+  margin: 10px;
 }
 
 
+/* Search bar */
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.searchbar {
+  width: 150px;
+  height: 30px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
-  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other
-  @media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .header-right {
-      float: none;
-    } */
+#logo-wrap {
+  background: url(https://i.imgur.com/iLDiPoT.gif);
+  background-size: 100;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+#logo-bar {
+  height: 150px !important;
+} 
+
+  img {
+    /* margin: 45px 0 0 25px; */
+    display: block;
+    border-radius: 10px;
+  }
+
+
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  } */
 
 /* Footer */
 /*** Adding Styles to Company Details ***/
@@ -151,4 +335,4 @@ ul.contact li a{
 	height: 40px; 
 	line-height: 40px; 
 	text-align: center; 
-} 
+}
