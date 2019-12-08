@@ -1,21 +1,86 @@
 const products = [
   {
-    name: 'Product 1',
-    price: 123.44,
-    img: 'img/product.jpg'
+    name: 'iPhone 11',
+    price: 699.99,
+    img: 'img/iphone/iphone11.png'
   },{
-    name: 'Product 2',
-    price: 132.12,
-    img: 'img/product.jpg'
+    name: 'iPhone XR',
+    price: 599.99,
+    img: 'img/iphone/iphonexr.png'
   },{
-    name: 'Product 3',
-    price: 111.11,
-    img: 'img/product.jpg'
+    name: 'iPhone X',
+    price: 849.99,
+    img: 'img/iphone/iphonex.png'
   },{
-    name: 'Product 4',
-    price: 111.11,
-    img: 'img/product.jpg'
+    name: 'iPhone 8',
+    price: 449.99,
+    img: 'img/iphone/iphone8.png'
+  },{
+    name: 'iPhone 11 Pro',
+    price: 999.99,
+    img: 'img/iphone/iphone11pro.png'
+  },{
+    name: 'iPhone 11 Pro Max',
+    price: 1099,
+    img: 'img/iphone/iphone11promax.png'
+  },{
+    name: 'iPhone XS',
+    price: 1379,
+    img: 'img/iphone/iphonexs.png'
+  },{
+    name: 'iPhone XS Max',
+    price: 1519,
+    img: 'img/iphone/iphonexsmax.png'
+  },{
+    name: 'iPad Air',
+    price: 649.99,
+    img: 'img/iphone/ipadair.png'
+  },{
+    name: 'iPad Pro',
+    price: 799.99,
+    img: 'img/iphone/ipadpro.png'
+  },{
+    name: 'Samsung S10 Plus',
+    price: 1459,
+    img: 'img/samsung/samsungs10plus.png'
+  },{
+    name: 'Samsung S10',
+    price: 1219,
+    img: 'img/samsung/samsungs10.png'
+  },{
+    name: 'Samsung S9',
+    price: 859.99,
+    img: 'img/samsung/samsungs9.png'
+  },{
+    name: 'Samsung S9 Plus',
+    price: 1219,
+    img: 'img/samsung/samsungs9plus.png'
+  },{
+    name: 'Samsung S8',
+    price: 719.99,
+    img: 'img/samsung/samsungs8.png'
+  },{
+    name: 'Samsung S8 Plus',
+    price: 1115,
+    img: 'img/samsung/samsungs8plus.png'
+  },{
+    name: 'Samsung Note 10 ',
+    price: 1259,
+    img: 'img/samsung/samsungnote10.png'
+  },{
+    name: 'Samsung Note 10 Plus',
+    price: 1459,
+    img: 'img/samsung/samsungnote10plus.png'
+  },{
+    name: 'Samsung Note 9',
+    price: 999.99,
+    img: 'img/samsung/samsungnote9.png'
+  },{
+    name: 'Samsung Note 8',
+    price: 749.99,
+    img: 'img/samsung/samsungnote8.png'
   }
+  
 ];
 
 
@@ -28,7 +93,7 @@ const getProductAsHtml = (prod) => {
     <header class="image">
       <img src="${prod.img}" alt="Product Image">
     </header>
-    <h3>${prod.name}</h3> <hr width="80%">
+    <h3>${prod.name}</h3> <hr width="100%">
     <p class="info">A nice picture of the product.</p>
 
     <form>
@@ -78,3 +143,4 @@ window.addEventListener('click', e => {
     myDropdown.classList.toggle('show')
   }
 });
+

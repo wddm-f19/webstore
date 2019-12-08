@@ -99,18 +99,34 @@
 }
 
 .cartbtn {
+  transition: transform .3s;
   margin-top: 10px;
+  border-radius: 5px;
+}
+
+.cartbtn:hover {
+  transition: transform .2s;
+  transform: scale(1.1); 
+  border-radius: 5px;
 }
 
 .favbtn {
+  transition: transform .3s;
   margin-top: 10px;
+  border-radius: 5px;
+}
+
+.favbtn:hover {
+  transition: transform .2s;
+  transform: scale(1.2); 
+  border-radius: 5px;
 }
 
 h3 {
   color: red;
   background-color: #333;
   border-radius: 10px;
-  width: 200px;
+  width: 400px;
   text-align: center;
   font-size: 40px;
   margin-bottom: 5px;
@@ -122,6 +138,7 @@ h3 {
  margin-top: 10px;
  margin-bottom: 10px;
  font-size: 20px;
+ text-align: left;
 }  
 
 
@@ -254,6 +271,10 @@ h3 {
     border-radius: 10px;
   }
 
+.titleone {
+  text-align: center;
+  font-size: 100px;
+}
 
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other
